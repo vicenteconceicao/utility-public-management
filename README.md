@@ -13,6 +13,6 @@ Application to manage a Utility Public
 
 - **ConsoleTables 2.4.2**
 
-## Executar o Projeto
+## How to use?
 
 Open soluction **UtilityPublicConsoleApp.sln** in Microsoft Visual Studio then, **Start**.
