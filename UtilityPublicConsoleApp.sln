@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityPublicManagement", "UtilityPublicConsoleApplication\UtilityPublicManagement.csproj", "{A44F2153-4F4A-4ACD-BAFD-F8A949878B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityPublicManagementTest", "UtilityPublicManagementTest\UtilityPublicManagementTest.csproj", "{50F0AC6F-1063-40DF-BA59-66E21C6C5F64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A44F2153-4F4A-4ACD-BAFD-F8A949878B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44F2153-4F4A-4ACD-BAFD-F8A949878B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44F2153-4F4A-4ACD-BAFD-F8A949878B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44F2153-4F4A-4ACD-BAFD-F8A949878B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F0AC6F-1063-40DF-BA59-66E21C6C5F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F0AC6F-1063-40DF-BA59-66E21C6C5F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F0AC6F-1063-40DF-BA59-66E21C6C5F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F0AC6F-1063-40DF-BA59-66E21C6C5F64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48264FAA-C410-4C2F-9F0F-2BAE60BE861F}
+	EndGlobalSection
+EndGlobal
