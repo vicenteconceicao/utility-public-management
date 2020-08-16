@@ -15,4 +15,4 @@ Application to manage a Utility Public
 
 ## Executar o Projeto
 
-Abrir a solução **UtilityPublicConsoleApp.sln** no Visual Studio.
+Open soluction **UtilityPublicConsoleApp.sln** in Microsoft Visual Studio then, **Start**.
