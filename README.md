@@ -3,7 +3,7 @@
 
 Application to manage a Utility Public 
 
-![GitHub language count](https://img.shields.io/github/languages/count/vicentejrlive/utility-public-management)
+![GitHub repo size](https://img.shields.io/github/repo-size/vicentejrlive/utility-public-management) ![GitHub language count](https://img.shields.io/github/languages/count/vicentejrlive/utility-public-management) [![GitHub made by](https://img.shields.io/badge/made%20by-vicentejrlive-green)](https://www.linkedin.com/in/vicente-jr-41787963/)
 
 ## Technology
 
