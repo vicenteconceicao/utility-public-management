@@ -43,11 +43,19 @@ namespace UtilityPublicConsoleApplication
                     case 1:
                         console.ShowSelectedOptionTitle(option);
                         serialNumber = endPointInputs.SerialNumber();
-                        switchState = endPointInputs.SwitchState();
-                        meterId = endPointInputs.ModelId();
-                        meterNumber = endPointInputs.MeterNumber();
-                        meterFirmwareVersion = endPointInputs.MeterFirmwareVersion();
-                        Console.WriteLine(controller.Create(serialNumber, switchState, meterId, meterNumber, meterFirmwareVersion));
+                        bool exit = controller.ExistEndPoint(serialNumber);
+                        if (exit)
+                        {
+                            Console.WriteLine("Serial Number already exist. Please, try again.");
+                        }
+                        else
+                        {
+                            switchState = endPointInputs.SwitchState();
+                            meterId = endPointInputs.ModelId();
+                            meterNumber = endPointInputs.MeterNumber();
+                            meterFirmwareVersion = endPointInputs.MeterFirmwareVersion();
+                            Console.WriteLine(controller.Create(serialNumber, switchState, meterId, meterNumber, meterFirmwareVersion));
+                        }
                         consoleInputs.PressToBack();
                         break;
                     case 2:

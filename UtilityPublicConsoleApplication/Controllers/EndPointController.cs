@@ -9,6 +9,10 @@ using UtilityPublicConsoleApplication.Models;
 
 namespace UtilityPublicConsoleApplication.Controllers
 {
+    /// <summary>
+    /// The main EndPoint class.
+    /// Contains all methods for create, update, delete and list EndPoints.
+    /// </summary>
     public class EndPointController : IEndPointController
     {
         private IList<EndPoint> endPoints { get; set; }
@@ -24,7 +28,15 @@ namespace UtilityPublicConsoleApplication.Controllers
                 new EndPoint("KNM84A", SwitchState.Disconnected, MeterModelId.NSX3P4W, 1, "1.0.1"),
             };
         }
-
+        /// <summary>
+        /// Create method. Receive all EndPoint attributes.
+        /// </summary>
+        /// <param name="serialNumber"></param>
+        /// <param name="switchState"></param>
+        /// <param name="meterId"></param>
+        /// <param name="meterNumber"></param>
+        /// <param name="meterFirmwareVersion"></param>
+        /// <returns>String with success or error message.</returns>
         public String Create(String serialNumber, SwitchState switchState, MeterModelId meterId, int meterNumber, string meterFirmwareVersion)
         {
             var endPointExist = endPoints
@@ -41,6 +53,12 @@ namespace UtilityPublicConsoleApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// Update method. Receive SerialNumber and SwitchState attributes.
+        /// </summary>
+        /// <param name="serialNumber"></param>
+        /// <param name="switchState"></param>
+        /// <returns>String with success or error message.</returns>
         public String Update(String serialNumber, SwitchState switchState)
         {
             var endPointExist = endPoints
@@ -57,6 +75,11 @@ namespace UtilityPublicConsoleApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// Delete method. Receive SerialNumber attribute.
+        /// </summary>
+        /// <param name="serialNumber"></param>
+        /// <returns>String with success or error message.</returns>
         public String Delete(String serialNumber)
         {
             var endPointExist = endPoints
@@ -74,6 +97,11 @@ namespace UtilityPublicConsoleApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// Get by Serial Number method. Receive SerialNumber attribute.
+        /// </summary>
+        /// <param name="serialNumber"></param>
+        /// <returns>String with attributes from EndPoint or error message.</returns>
         public String GetBySerialNumber(String serialNumber)
         {
             var endPointExist = endPoints
@@ -90,6 +118,9 @@ namespace UtilityPublicConsoleApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// GetAll method. Write a table with all EndPoints stored.
+        /// </summary>
         public void GetAll() => ConsoleTable.From(endPoints).Write();
 
         public bool ExistEndPoint(String serialNumber)
